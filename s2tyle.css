@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.typing_animation_box{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.typing_animation{
+    display: flex;
+}
+
+.typing_animation .static-text{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+}
+
+.typing_animation .dynamic-text{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-text li{
+    list-style: none;
+    color: yellow;
+    font-size: 60px;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+
+.dynamic-text li{
+    position: relative;
+}
+
+
